@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat ;
+    background-position-y: -6.25rem ;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .img-1{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 2.5rem;
+}
+.container h1{
+    font-size: 1.625rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 1.25rem;
+}
+.container p{
+    width: 75%;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 1.25rem;
+}
+.plan{
+    background-color: hsl(225, 100%, 98%);
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan img{
+    grid-area: one ;
+}
+.plan .price{
+    display: inline-block;
+    margin-left: -20%;
+}
+.price span:first-child{
+    font-weight: 700;
+    color:  hsl(223, 47%, 23%);
+}
+.price span:last-child{
+    color:  hsl(224, 23%, 55%);
+}
+.plan a{
+    font-weight:700;
+    color: hsl(245, 75%, 52%);
+}
+.plan a:hover{
+    text-decoration: none;
+    color: #766CF1;
+    cursor: pointer;
+    transition: .1s ease;
+
+}
+button{
+    display: block;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+button:first-of-type{
+    background-color:  hsl(245, 75%, 52%);
+    color: rgb(255, 255, 255);
+    width: 80%;
+    height: 7%;
+    border-radius: 10px;
+    margin-bottom: 1.25rem;
+}
+button:first-of-type:active{
+    background-color: #766CF1;
+}
+button:last-of-type{
+    color:  hsl(224, 23%, 55%);
+    background-color: unset;
+}
+button:last-of-type:active{
+    color: hsl(223, 47%, 23%);
+}
+@media (max-width:375px){
+    body{
+        background-image: url("images/pattern-background-mobile.svg");
+        background-repeat: no-repeat ;  
+    }
+    .container{
+        width: 320px;
+        margin: 1.25rem;
+    }
+    .plan{
+        width: 95%;
+    }
+    .plan .price{
+        margin-left: 0%;
+    }
+}
